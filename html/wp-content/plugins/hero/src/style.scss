@@ -1,0 +1,48 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-hero {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+	height: 100vh;
+}
+
+.hero-img {
+	width: 50%;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+.hero-content {
+	width: 50%;
+
+	h1 {
+		text-align: center;
+	}
+	p {
+		padding: 10px;
+	}
+
+	.hero-links {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			background-color: rgb(66, 64, 64);
+			color: white;
+			border-radius: 10px 10px 10px 10px;
+			padding: 20px;
+			margin: 5px 20px 0 10px;
+			width: 200px;
+			text-decoration: none;
+		}
+	}
+}

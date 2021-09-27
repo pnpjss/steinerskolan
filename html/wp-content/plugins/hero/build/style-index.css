@@ -1,0 +1,49 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-hero {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 50%;
+}
+.hero-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero-content {
+  width: 50%;
+}
+.hero-content h1 {
+  text-align: center;
+}
+.hero-content p {
+  padding: 10px;
+}
+.hero-content .hero-links {
+  display: flex;
+  flex-direction: column;
+}
+.hero-content .hero-links a {
+  background-color: #424040;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin: 5px 20px 0 10px;
+  width: 200px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
