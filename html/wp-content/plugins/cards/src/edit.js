@@ -72,6 +72,18 @@ export default function Edit({ attributes, setAttributes }) {
 						value={attributes.firstContent}
 						onChange={(value) => setAttributes({ firstContent: value })}
 					/>
+					<RichText
+						placeholder={__("write url here, for example '/about-us'", "card")}
+						tagName={"p"}
+						value={attributes.firstLink}
+						onChange={(value) => setAttributes({ firstLink: value })}
+					/>
+					<RichText
+						placeholder={__("write link text here", "card")}
+						tagName={"p"}
+						value={attributes.firstLinkText}
+						onChange={(value) => setAttributes({ firstLinkText: value })}
+					/>
 				</div>
 			</div>
 			<div className="card">
@@ -107,6 +119,18 @@ export default function Edit({ attributes, setAttributes }) {
 						value={attributes.secondContent}
 						onChange={(value) => setAttributes({ secondContent: value })}
 					/>
+					<RichText
+						placeholder={__("write url here, for example '/about-us'", "card")}
+						tagName={"p"}
+						value={attributes.secondLink}
+						onChange={(value) => setAttributes({ secondLink: value })}
+					/>
+					<RichText
+						placeholder={__("write link text here", "card")}
+						tagName={"p"}
+						value={attributes.secondLinkText}
+						onChange={(value) => setAttributes({ secondLinkText: value })}
+					/>
 				</div>
 			</div>
 			<div className="card">
@@ -141,6 +165,18 @@ export default function Edit({ attributes, setAttributes }) {
 						tagName={"p"}
 						value={attributes.thirdContent}
 						onChange={(value) => setAttributes({ thirdContent: value })}
+					/>
+					<RichText
+						placeholder={__("write url here, for example '/about-us'", "card")}
+						tagName={"p"}
+						value={attributes.thirdLink}
+						onChange={(value) => setAttributes({ thirdLink: value })}
+					/>
+					<RichText
+						placeholder={__("write link text here", "card")}
+						tagName={"p"}
+						value={attributes.thirdLinkText}
+						onChange={(value) => setAttributes({ thirdLinkText: value })}
 					/>
 				</div>
 			</div>

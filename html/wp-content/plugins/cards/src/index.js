@@ -40,6 +40,14 @@ registerBlockType("create-block/cards", {
 			source: "children",
 			selector: "p",
 		},
+		firstLink: {
+			type: "string",
+			selector: "p",
+		},
+		firstLinkText: {
+			type: "array",
+			selector: "p",
+		},
 		secondImage: {
 			type: "object",
 			selector: "card-img",
@@ -49,6 +57,14 @@ registerBlockType("create-block/cards", {
 			source: "children",
 			selector: "p",
 		},
+		secondLink: {
+			type: "string",
+			selector: "p",
+		},
+		secondLinkText: {
+			type: "array",
+			selector: "p",
+		},
 		thirdImage: {
 			type: "object",
 			selector: "card-img",
@@ -56,6 +72,14 @@ registerBlockType("create-block/cards", {
 		thirdContent: {
 			type: "array",
 			source: "children",
+			selector: "p",
+		},
+		thirdLink: {
+			type: "string",
+			selector: "p",
+		},
+		thirdLinkText: {
+			type: "array",
 			selector: "p",
 		},
 	},

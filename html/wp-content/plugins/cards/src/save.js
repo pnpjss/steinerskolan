@@ -32,6 +32,9 @@ export default function save({ attributes }) {
 				<div className="card-content">
 					<p>{attributes.firstContent}</p>
 				</div>
+				<div className="card-link">
+					<a href={attributes.firstLink}>{attributes.firstLinkText}</a>
+				</div>
 			</div>
 			<div className="card">
 				<div className="card-img">
@@ -40,6 +43,9 @@ export default function save({ attributes }) {
 				<div className="card-content">
 					<p>{attributes.secondContent}</p>
 				</div>
+				<div className="card-link">
+					<a href={attributes.secondLink}>{attributes.secondLinkText}</a>
+				</div>
 			</div>
 			<div className="card">
 				<div className="card-img">
@@ -47,6 +53,9 @@ export default function save({ attributes }) {
 				</div>
 				<div className="card-content">
 					<p>{attributes.thirdContent}</p>
+				</div>
+				<div className="card-link">
+					<a href={attributes.thirdLink}>{attributes.thirdLinkText}</a>
 				</div>
 			</div>
 		</div>
