@@ -26,7 +26,6 @@ import { Button } from "@wordpress/components";
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import "./editor.scss";
-import { TextControl } from "@wordpress/components";
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -82,16 +81,26 @@ export default function Edit({ attributes, setAttributes }) {
 				/>
 				<div className="hero-links">
 					<RichText
-						placeholder={__("First link", "hero")}
+						placeholder={__("First link title", "hero")}
 						tagName={"a"}
 						value={attributes.firstLink}
 						onChange={(value) => setAttributes({ firstLink: value })}
 					/>
 					<RichText
-						placeholder={__("second link", "hero")}
+						placeholder={__("type in url for first link", "hero")}
+						value={attributes.firstUrl}
+						onChange={(value) => setAttributes({ firstUrl: value })}
+					/>
+					<RichText
+						placeholder={__("Second link title", "hero")}
 						tagName={"a"}
 						value={attributes.secondLink}
 						onChange={(value) => setAttributes({ secondLink: value })}
+					/>
+					<RichText
+						placeholder={__("type in url for second link", "hero")}
+						value={attributes.secondUrl}
+						onChange={(value) => setAttributes({ secondUrl: value })}
 					/>
 				</div>
 			</div>

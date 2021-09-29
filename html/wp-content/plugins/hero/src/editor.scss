@@ -6,4 +6,51 @@
 
 .wp-block-create-block-hero {
 	border: 1px dotted #f00;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.hero-img {
+		width: 50%;
+		img {
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+		display: flex;
+		width: 100%;
+
+		.hero-img {
+			width: 50%;
+			height: unset;
+
+			img {
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+
+		.hero-content {
+			width: 50%;
+
+			h1 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			p {
+				padding: 10px;
+				font-size: 16px;
+				line-height: 30px;
+			}
+
+			.hero-links {
+				a {
+					margin: 10px 10px 0;
+					padding: 20px 30px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
 }
