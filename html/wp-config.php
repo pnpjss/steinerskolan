@@ -129,5 +129,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
+/* WP content uploads test - Lucas */
+// define( 'UPLOADS', 'wp-content/uploads' );
+define('FS_METHOD', 'direct');
+define( 'UPLOADS', 'html/wp-content/uploads' );
+
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
