@@ -26,43 +26,64 @@ import Save from "./save";
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType("create-block/hero", {
-	title: __("My hero block"),
-	icon: "index-card",
-	category: "layout",
+registerBlockType("create-block/cards", {
+	title: __("My-card-block"),
+	icon: "shield",
+	category: "widgets",
 	attributes: {
-		title: {
-			type: "array",
-			source: "children",
-			selector: "h1",
-		},
-		image: {
+		firstImage: {
 			type: "object",
-			selector: "hero-img",
+			selector: "card-img",
 		},
-		content: {
+		firstContent: {
 			type: "array",
 			source: "children",
 			selector: "p",
 		},
 		firstLink: {
+			type: "string",
+			selector: "p",
+		},
+		firstLinkText: {
 			type: "array",
-			selector: "a",
+			selector: "p",
+		},
+		secondImage: {
+			type: "object",
+			selector: "card-img",
+		},
+		secondContent: {
+			type: "array",
+			source: "children",
+			selector: "p",
 		},
 		secondLink: {
-			type: "array",
-			selector: "a",
+			type: "string",
+			selector: "p",
 		},
-		firstUrl: {
+		secondLinkText: {
 			type: "array",
+			selector: "p",
 		},
-		secondUrl: {
+		thirdImage: {
+			type: "object",
+			selector: "card-img",
+		},
+		thirdContent: {
 			type: "array",
+			source: "children",
+			selector: "p",
+		},
+		thirdLink: {
+			type: "string",
+			selector: "p",
+		},
+		thirdLinkText: {
+			type: "array",
+			selector: "p",
 		},
 	},
-
 	edit: Edit,
-
 	/**
 	 * @see ./save.js
 	 */

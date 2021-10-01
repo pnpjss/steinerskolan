@@ -25,15 +25,37 @@ import { useBlockProps } from "@wordpress/block-editor";
 export default function save({ attributes }) {
 	return (
 		<div {...useBlockProps.save()}>
-			<div className="hero-img">
-				<img src={attributes.image.url} />
+			<div className="card">
+				<div className="card-img">
+					<img src={attributes.firstImage.url} />
+				</div>
+				<div className="card-content">
+					<p>{attributes.firstContent}</p>
+				</div>
+				<div className="card-link">
+					<a href={attributes.firstLink}>{attributes.firstLinkText}</a>
+				</div>
 			</div>
-			<div className="hero-content">
-				<h1>{attributes.title}</h1>
-				<p>{attributes.content}</p>
-				<div className="hero-links">
-					<a href={attributes.firstUrl}>{attributes.firstLink}</a>
-					<a href={attributes.secondUrl}>{attributes.secondLink}</a>
+			<div className="card">
+				<div className="card-img">
+					<img src={attributes.secondImage.url} />
+				</div>
+				<div className="card-content">
+					<p>{attributes.secondContent}</p>
+				</div>
+				<div className="card-link">
+					<a href={attributes.secondLink}>{attributes.secondLinkText}</a>
+				</div>
+			</div>
+			<div className="card">
+				<div className="card-img">
+					<img src={attributes.thirdImage.url} />
+				</div>
+				<div className="card-content">
+					<p>{attributes.thirdContent}</p>
+				</div>
+				<div className="card-link">
+					<a href={attributes.thirdLink}>{attributes.thirdLinkText}</a>
 				</div>
 			</div>
 		</div>
