@@ -1,17 +1,15 @@
 <?php get_header(); ?>
 
-<div class="row">
-    <div class="col">
-        <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
+<div class="container">
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
 
-                <h1><?php the_title(); ?></h1>
+            <h1><?php the_title(); ?></h1>
 
-                <?php the_content(); ?>
+            <?php the_content(); ?>
 
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </div>
 
 
