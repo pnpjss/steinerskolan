@@ -6,3 +6,35 @@ Author URI:
 Description: A wordpress theme for Rudolf Steinerskolan.
 Version: 1.0
 */
+
+.nav-container {
+  height: 88px;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+.logo {
+
+}
+
+.nav-link {
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-box {
+  margin-left: 2rem;
+}
