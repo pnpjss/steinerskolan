@@ -11,6 +11,7 @@ import { __ } from "@wordpress/i18n";
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
+// import { useBlockProps } from "@wordpress/block-editor";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -28,7 +29,6 @@ import "./editor.scss";
  *
  * @return {WPElement} Element to render.
  */
-
 import {
 	MediaUpload,
 	MediaUploadCheck,
@@ -40,7 +40,7 @@ import { Button } from "@wordpress/components";
 export default function Edit({ attributes, setAttributes }) {
 	const { image } = attributes;
 	return (
-		<div className="about-top-content" {...useBlockProps()}>
+		<div {...useBlockProps()}>
 			<MediaUploadCheck>
 				<MediaUpload
 					onSelect={(media) => setAttributes({ image: media })}
@@ -66,20 +66,25 @@ export default function Edit({ attributes, setAttributes }) {
 					}
 				/>
 			</MediaUploadCheck>
-			<div className="about-text">
-				<RichText
-					placeholder={__("write your title here", "about-top")}
-					tagName={"h1"}
-					value={attributes.title}
-					onChange={(value) => setAttributes({ title: value })}
-				/>
-				<RichText
-					placeholder={__("About paragraph", "about-top")}
-					tagName={"p"}
-					value={attributes.text}
-					onChange={(value) => setAttributes({ text: value })}
-				/>
-			</div>
+
+			<RichText
+				placeholder={__("write your title here", "title")}
+				tagName={"h2"}
+				value={attributes.title}
+				onChange={(value) => setAttributes({ title: value })}
+			/>
+			<RichText
+				placeholder={__("About paragraph", "text")}
+				tagName={"p"}
+				value={attributes.text}
+				onChange={(value) => setAttributes({ text: value })}
+			/>
+			<RichText
+				placeholder={__("Second paragraph", "text2")}
+				tagName={"p2"}
+				value={attributes.text2}
+				onChange={(value) => setAttributes({ text2: value })}
+			/>
 		</div>
 	);
 }
