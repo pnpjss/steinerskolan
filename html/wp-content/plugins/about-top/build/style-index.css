@@ -25,6 +25,8 @@
 .wp-block-create-block-about-top .about-image img {
   width: 100%;
   height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 @media screen and (min-width: 700px) {
