@@ -10,6 +10,43 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./fonts/IBMPlexSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./fonts/IBMPlexSans-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./fonts/IBMPlexSans-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--third-color);
+  color: #252525;
+  font-family: 'IBM Plex Sans', arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
 .nav-container {
   max-height: 88px;
   display: flex;
@@ -124,6 +161,14 @@ section .nav-link {
   border-bottom: 2px solid var(--third-color);
 }
 
+.container {
+  margin-top: 2rem;
+}
+
+.link-container {
+  display: none;
+}
+
 @media screen and (max-width: 1150px){
   .toggle-search {
     display: inline-block;
@@ -152,5 +197,52 @@ section .nav-link {
   
   .search-container{
     display: none;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    position: relative;
+    display: block;
+    margin-top: unset;
+  }
+  .link-container {
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: block;
+  }
+  .link-container aside {
+    position: sticky;
+    top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .link-container aside h3 {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  .link-container aside ul {
+    padding-inline-start: 0;
+  }
+  .link-container aside ul li {
+    list-style: none;
+    padding: 15px 10px;
+    border-left: 3px solid var(--main-bg-color);
+  }
+
+  .link-container aside ul li a {
+    color: #252525;
+    text-decoration: none;
+  }
+
+  .link-container aside ul li:hover a {
+    color: #5f5f5f;
+  }
+  .link-container aside ul .active-content-link {
+    border-left: 3px solid var(--second-color);
   }
 }
