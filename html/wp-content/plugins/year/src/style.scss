@@ -1,0 +1,156 @@
+.wp-block-create-block-year {
+	width: 100%;
+	margin: 10px 0;
+
+	.year-box-mobile {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.year-btn {
+			width: 90%;
+			border-radius: 18px;
+			background-color: white;
+			border: none;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 18px;
+			height: 73px;
+			cursor: pointer;
+			font-family: "IBM Plex Sans", arial, sans-serif;
+			font-weight: 500;
+
+			span {
+				font-size: 30px;
+			}
+			.open-btn {
+				display: block;
+			}
+			.close-btn {
+				display: none;
+			}
+
+			.svg-hidden {
+				display: none;
+			}
+
+			.svg-visible {
+				display: block;
+			}
+		}
+
+		.year-btn-open {
+			border-radius: 18px 18px 0 0;
+		}
+		.year-box-content-hidden {
+			width: 90%;
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			background-color: white;
+			border-radius: 0 0 18px 18px;
+
+			.year-img {
+				width: 100%;
+				margin-top: 20px;
+
+				img {
+					width: 100%;
+				}
+			}
+			p {
+				padding: 20px;
+			}
+		}
+		.year-box-content-visible {
+			display: flex;
+		}
+	}
+
+	.year-box {
+		display: none;
+	}
+
+	@media screen and (min-width: 700px) {
+		display: flex;
+		justify-content: center;
+		margin: 2rem 0 6rem;
+
+		.year-box-mobile {
+			display: none;
+		}
+
+		.year-box {
+			width: 75%;
+			display: block;
+			background-color: white;
+			border-radius: 18px;
+
+			.year-top-border {
+				display: flex;
+				padding: 30px;
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 18px 18px 0px 0px;
+				height: 140px;
+				align-items: center;
+
+				h2 {
+					font-size: 25px;
+				}
+
+				img {
+					margin: 0 50px;
+					width: 55%;
+					height: 140px;
+				}
+			}
+			.year-content-box {
+				display: flex;
+
+				.year-img {
+					width: 100%;
+					border-radius: 0 0 0 18px;
+					background-color: white;
+					height: 550px;
+
+					img {
+						height: 100%;
+						border-radius: 0 0 0 18px;
+						object-fit: cover;
+						width: 100%;
+					}
+				}
+				.year-content {
+					width: 100%;
+
+					p {
+						font-size: 16px;
+						line-height: 27px;
+						padding: 20px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1025px) {
+		.year-box {
+			.year-top-border {
+				h2 {
+					font-size: 32px;
+				}
+			}
+			.year-content-box {
+				.year-content {
+					p {
+						font-size: 18px;
+						line-height: 30px;
+						padding: 30px;
+					}
+				}
+			}
+		}
+	}
+}
