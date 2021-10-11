@@ -14,7 +14,7 @@
 
     <nav class="nav-container" id="nav-container">
         <div class="logo-container">
-            <img src="/wp-content/uploads/Rudolf_Steinerskolan_Logotyp.png" alt="Logo" class="logo">
+            <img src="/wp-content/uploads/logo-2.svg" alt="Logo" class="logo">
         </div>
         <div class="link-container">
             <?php $currentPageId = $wp_query->queried_object_id;
@@ -35,13 +35,13 @@
         <button class="toggle-nav"><img src="/wp-content/uploads/menu.png" alt=""></button>
         
     </nav>
-    <aside>
+    <aside class="mobile-search-container">
         <form action="#" class="search-box">    
             <button type="submit"><img src="/wp-content/uploads/icons8-search.svg" alt="search"></button>
             <input type="text" name="search">
         </form>
     </aside>
-    <section>
+    <section class="mobile-link-container">
         <?php $currentPageId = $wp_query->queried_object_id;
         foreach ($menuItems as $item) : ?>
             <a class="nav-link<?= $item->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $item->url; ?>">

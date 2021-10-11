@@ -62,7 +62,7 @@ h3 {
 .logo-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .logo {
@@ -135,7 +135,7 @@ form button {
   display: none;
 }
 
-aside {
+.mobile-search-container {
   display: none;
   width: 100%;
   background: var(--main-bg-color);
@@ -143,7 +143,7 @@ aside {
   padding: 1rem;
 }
 
-section {
+.mobile-link-container {
   display: none;
   width: 100%;
   height: (100vh - 88px);
@@ -154,7 +154,7 @@ section {
   padding: 2rem;
 }
 
-section .nav-link {
+.mobile-link-container .nav-link {
   padding: 2rem 0;
   width: 100%;
   border-bottom: 2px solid var(--third-color);
@@ -196,6 +196,10 @@ section .nav-link {
 
   .search-container {
     display: none;
+  }
+
+  .logo {
+    max-width: 150px;
   }
 }
 
