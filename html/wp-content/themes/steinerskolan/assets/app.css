@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1010px) {
+@media screen and (min-width: 1150px) {
   .container {
     position: relative;
     display: block;
@@ -55,7 +55,7 @@ body {
     height: 100%;
     display: block;
   }
-  aside {
+  .link-container aside {
     position: sticky;
     top: 60px;
     display: flex;
@@ -64,28 +64,28 @@ body {
     padding: 20px;
   }
 
-  aside h3 {
+  .link-container aside h3 {
     font-size: 24px;
     margin: 0 10px;
   }
-  aside ul {
+  .link-container aside ul {
     padding-inline-start: 0;
   }
-  aside ul li {
+  .link-container aside ul li {
     list-style: none;
     padding: 15px 10px;
     border-left: 3px solid #f6b787;
   }
 
-  aside ul li a {
+  .link-container aside ul li a {
     color: #252525;
     text-decoration: none;
   }
 
-  aside ul li:hover a {
+  .link-container aside ul li:hover a {
     color: #5f5f5f;
   }
-  .active-content-link {
+  .link-container aside ul .active-content-link {
     border-left: 3px solid #d27f3f;
   }
 }
