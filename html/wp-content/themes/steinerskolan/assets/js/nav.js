@@ -1,33 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
   const hamburgerBtn = document.querySelector('.toggle-nav');
-  const section = document.querySelector('section');
+  const mobileLinkContainer = document.querySelector('.mobile-link-container');
 
   const searchBtn = document.querySelector('.toggle-search');
-  const aside = document.querySelector('aside');
+  const mobileSearchContainer = document.querySelector('.mobile-search-container');
 
   hamburgerBtn.addEventListener('click', () => {
-    if (section.style.display === 'flex') {
-      section.style.display = 'none';
+    if (mobileLinkContainer.style.display === 'flex') {
+      mobileLinkContainer.style.display = 'none';
     }
-    else if(aside.style.display === 'flex'){
-      aside.style.display = 'none';
-      section.style.display = 'flex';
+    else if(mobileSearchContainer.style.display === 'flex'){
+      mobileSearchContainer.style.display = 'none';
+      mobileLinkContainer.style.display = 'flex';
     }
     else {
-      section.style.display = 'flex';
+      mobileLinkContainer.style.display = 'flex';
     }
   })
 
   searchBtn.addEventListener('click', () => {
-    if (aside.style.display === 'flex') {
-      aside.style.display = 'none';
+    if (mobileSearchContainer.style.display === 'flex') {
+      mobileSearchContainer.style.display = 'none';
     }
-    else if (section.style.display === "flex"){
-      section.style.display = 'none';
-      aside.style.display = 'flex';
+    else if (mobileLinkContainer.style.display === "flex"){
+      mobileLinkContainer.style.display = 'none';
+      mobileSearchContainer.style.display = 'flex';
     }
     else {
-      aside.style.display = 'flex';
+      mobileSearchContainer.style.display = 'flex';
     }
   })
   
