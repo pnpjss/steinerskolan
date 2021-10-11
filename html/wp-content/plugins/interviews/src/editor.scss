@@ -1,0 +1,17 @@
+.wp-block-create-block-interviews {
+	width: 100%;
+	background-color: lightgray;
+
+	.interview {
+		width: 100%;
+
+		.interview-image {
+			width: 100%;
+			object-fit: contain;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

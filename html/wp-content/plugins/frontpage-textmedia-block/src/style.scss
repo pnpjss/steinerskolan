@@ -1,0 +1,81 @@
+.wp-block-create-block-frontpage-textmedia-block {
+	width: 100%;
+	padding: 50px 10px;
+	margin: 20px 0;
+
+	.textmedia-block {
+		display: flex;
+		flex-direction: column-reverse;
+		border-radius: 18px;
+		background-color: white;
+		.block-img {
+			width: 100%;
+			object-fit: contain;
+			border-radius: 18px 18px 0 0;
+
+			img {
+				width: 100%;
+				border-radius: 18px 18px 0 0;
+			}
+		}
+
+		.textmedia-block-content {
+			padding: 10px 20px 20px;
+
+			p {
+				margin: 20px 0;
+			}
+
+			.textmedia-block-link {
+				display: flex;
+				justify-content: end;
+
+				a {
+					color: #000;
+					font-style: italic;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 750px) {
+		display: flex;
+		justify-content: center;
+		.textmedia-block {
+			flex-direction: row;
+			width: 80%;
+
+			.block-img {
+				border-radius: 0 18px 18px 0;
+				width: 100%;
+				object-fit: fill;
+				img {
+					border-radius: 0 18px 18px 0;
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			.textmedia-block-content {
+				width: 100%;
+				padding: 30px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1025px) {
+		.textmedia-block {
+			.textmedia-block-content {
+				padding: 40px;
+				h3 {
+					font-size: 32px;
+					margin-bottom: 30px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
