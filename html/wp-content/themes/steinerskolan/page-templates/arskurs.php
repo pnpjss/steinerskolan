@@ -23,7 +23,7 @@ $arskurser = get_posts($args);
 
 <?php if (count($arskurser)) : ?>
     <div class="container">
-        <div class="link-container">
+        <div class="content-link-container">
             <aside>
                 <h3>Innehåll</h3>
                 <ul>

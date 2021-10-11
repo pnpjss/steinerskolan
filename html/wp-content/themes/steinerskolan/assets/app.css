@@ -1,7 +1,7 @@
 :root {
-  --main-bg-color: #F6B787;
-  --second-color: #D27F3F;
-  --third-color: #FFE3CE;
+  --main-bg-color: #f6b787;
+  --second-color: #d27f3f;
+  --third-color: #ffe3ce;
 }
 
 * {
@@ -107,8 +107,7 @@ h3 {
   height: 52px;
 }
 
-
-.search-box input[type=text] {
+.search-box input[type='text'] {
   padding: 10px 16px 10px 16px;
   border: none;
   border-radius: 18px;
@@ -165,11 +164,11 @@ section .nav-link {
   margin-top: 2rem;
 }
 
-.link-container {
+.content-link-container {
   display: none;
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) {
   .toggle-search {
     display: inline-block;
     border: none;
@@ -194,8 +193,8 @@ section .nav-link {
   .link-container {
     display: none;
   }
-  
-  .search-container{
+
+  .search-container {
     display: none;
   }
 }
@@ -206,13 +205,13 @@ section .nav-link {
     display: block;
     margin-top: unset;
   }
-  .link-container {
+  .content-link-container {
     position: absolute;
     right: 20px;
     height: 100%;
     display: block;
   }
-  .link-container aside {
+  .content-link-container aside {
     position: sticky;
     top: 60px;
     display: flex;
@@ -221,28 +220,28 @@ section .nav-link {
     padding: 20px;
   }
 
-  .link-container aside h3 {
+  .content-link-container aside h3 {
     font-size: 24px;
     margin: 0 10px;
   }
-  .link-container aside ul {
+  .content-link-container aside ul {
     padding-inline-start: 0;
   }
-  .link-container aside ul li {
+  .content-link-container aside ul li {
     list-style: none;
     padding: 15px 10px;
     border-left: 3px solid var(--main-bg-color);
   }
 
-  .link-container aside ul li a {
+  .content-link-container aside ul li a {
     color: #252525;
     text-decoration: none;
   }
 
-  .link-container aside ul li:hover a {
+  .content-link-container aside ul li:hover a {
     color: #5f5f5f;
   }
-  .link-container aside ul .active-content-link {
+  .content-link-container aside ul .active-content-link {
     border-left: 3px solid var(--second-color);
   }
 }

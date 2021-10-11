@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const yearBtns = document.querySelectorAll('.year-btn');
-  const contentLinks = document.querySelectorAll('.link-container aside ul li');
+  const contentLinks = document.querySelectorAll(
+    '.content-link-container aside ul li'
+  );
 
   contentLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
