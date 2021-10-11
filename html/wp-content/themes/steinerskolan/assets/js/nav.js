@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const aside = document.querySelector('aside');
 
   hamburgerBtn.addEventListener('click', () => {
-    console.log(section);
     if (section.style.display === 'flex') {
       section.style.display = 'none';
     }
