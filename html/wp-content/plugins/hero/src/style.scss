@@ -70,7 +70,7 @@
 			}
 		}
 	}
-	@media screen and (min-width: 1010px) {
+	@media screen and (min-width: 1150px) {
 		display: flex;
 		width: 100%;
 		position: relative;
@@ -105,10 +105,10 @@
 					margin: 10px 10px 0;
 					padding: 1.5vw 2vw;
 					font-size: 1.6vw;
-					width: fit-content;
+					width: 280px;
 
 					&:nth-child(2) {
-						width: fit-content;
+						width: 320px;
 					}
 				}
 			}

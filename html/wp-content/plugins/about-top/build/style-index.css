@@ -6,6 +6,9 @@
   flex-direction: column;
   width: 100%;
   color: #181818;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .wp-block-create-block-about-top .about-top-content {
   height: 100vh;

@@ -49,11 +49,12 @@
 			.block-img {
 				border-radius: 0 18px 18px 0;
 				width: 100%;
-				object-fit: fill;
+				height: 510px;
 				img {
 					border-radius: 0 18px 18px 0;
 					height: 100%;
 					width: 100%;
+					object-fit: cover;
 				}
 			}
 

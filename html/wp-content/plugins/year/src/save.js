@@ -1,18 +1,17 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
-import backgroundImage from "./images/green.png";
 import closeBtn from "./images/Closebtn.svg";
 import openBtn from "./images/Openbtn.svg";
 
 export default function Save({ attributes }) {
-	const { title, image, content } = attributes;
+	const { title, image, content, topBorderImage } = attributes;
 
 	return (
 		<section {...useBlockProps.save()}>
 			<div className={"year-box"} id={title[0].split(" ").join("")}>
 				<div className="year-top-border">
 					<h2>{title}</h2>
-					<img src={backgroundImage} />
+					<img src={topBorderImage.url} />
 				</div>
 				<div className="year-content-box">
 					<div className="year-img">
