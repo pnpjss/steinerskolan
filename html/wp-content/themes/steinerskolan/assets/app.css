@@ -10,14 +10,14 @@
 }
 
 footer {
-  display: grid;
-  margin-top: 0rem;
-  width: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
-  background-color: #f6b787;
-  color: white;
-  justify-content: center;
-  font-family: arial;
+	display: grid;
+	margin-top: 0rem;
+	width: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: #f6b787;
+	color: white;
+	justify-content: center;
+
 }
 .grid-item-1,
 .grid-item-2,
@@ -56,23 +56,26 @@ footer {
   object-fit: contain;
 }
 
-ul,
-li {
-  width: 80%;
-  padding-left: 0px;
-  list-style: none;
-  padding-top: 1rem;
+
+footer ul,
+footer li {
+	width: 80%;
+	padding-left: 0px;
+	list-style: none;
+	padding-top: 1rem;
 }
-a,
-p,
-li {
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
+
+footer a,
+footer p,
+footer li {
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
 }
-a {
-  font-weight: 600;
+footer a {
+	font-weight: 600;
+
 }
 hr {
   border: 1px solid white;
@@ -84,44 +87,46 @@ hr {
   visibility: hidden;
 }
 @media screen and (min-width: 700px) {
-  footer {
-    height: 320px;
 
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 0.5fr 0.25fr 0.25fr;
-    grid-template-rows: 0.65fr;
-  }
-  .grid-item-1,
-  .grid-item-2,
-  .grid-item-3 {
-    background-color: #f6b787;
-    height: 100%;
-    width: auto;
-    max-width: 95%;
-    display: flex;
-    align-items: center;
-  }
-  .grid-item-1 {
-    padding-left: 25%;
-    margin-top: -0.5rem;
-  }
-  .grid-item-2 {
-    align-items: flex-start;
-    /* padding-left: 10%; */
-  }
-  .grid-item-3 {
-    align-items: flex-start;
-  }
-  hr,
-  .hr-bottom {
-    visibility: hidden;
-  }
-  a,
-  p,
-  li {
-    font-size: 18px;
-  }
+	footer {
+		height: 320px;
+
+		justify-content: center;
+		align-content: center;
+		grid-template-columns: 0.5fr 0.25fr 0.25fr;
+		grid-template-rows: 0.65fr;
+	}
+	.grid-item-1,
+	.grid-item-2,
+	.grid-item-3 {
+		background-color: #f6b787;
+		height: 100%;
+		width: auto;
+		max-width: 95%;
+		display: flex;
+		align-items: center;
+	}
+	.grid-item-1 {
+		padding-left: 25%;
+		margin-top: -0.5rem;
+	}
+	.grid-item-2 {
+		align-items: flex-start;
+		/* padding-left: 10%; */
+	}
+	.grid-item-3 {
+		align-items: flex-start;
+	}
+	hr,
+	.hr-bottom {
+		visibility: hidden;
+	}
+	footer a,
+	footer p,
+	footer li {
+		font-size: 18px;
+	}
+
 }
 
 html {
