@@ -1,0 +1,63 @@
+.wp-block-create-block-calendar {
+	width: 300px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 18px 18px 0 0;
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	transition: 0.2s ease;
+	background-color: #3433bd;
+	color: white;
+	box-shadow: 0px 0px 5px 0px #2354c2;
+
+	&:hover {
+		color: #3433bd;
+		background-color: white;
+	}
+
+	h3 {
+		cursor: pointer;
+	}
+
+	ul {
+		padding-inline-start: 0;
+		display: none;
+
+		li {
+			margin: 20px 0;
+			list-style: none;
+		}
+	}
+
+	@media screen and (min-width: 1150px) {
+		ul {
+			li {
+				letter-spacing: 0.8px;
+			}
+		}
+	}
+}
+
+.calendar-open {
+	animation: slide-up 0.3s ease-in;
+
+	&:hover {
+		background-color: #3433bd;
+		color: white;
+	}
+
+	ul {
+		display: block;
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(600px);
+	}
+
+	100% {
+		transform: translateY(300px);
+	}
+}

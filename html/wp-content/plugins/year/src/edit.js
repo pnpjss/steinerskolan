@@ -9,7 +9,7 @@ import { Button } from "@wordpress/components";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { image } = attributes;
+	const { image, topBorderImage } = attributes;
 	return (
 		<div {...useBlockProps()}>
 			<div className="year-box">
@@ -20,6 +20,31 @@ export default function Edit({ attributes, setAttributes }) {
 						value={attributes.title}
 						onChange={(value) => setAttributes({ title: value })}
 					/>
+
+					<MediaUploadCheck>
+						<MediaUpload
+							onSelect={(media) => setAttributes({ topBorderImage: media })}
+							allowedTypes={["image"]}
+							value={topBorderImage ? topBorderImage.id : ""}
+							render={({ open }) =>
+								topBorderImage ? (
+									<>
+										<img src={topBorderImage.url} />
+										<Button
+											onClick={() => setAttributes({ topBorderImage: "" })}
+											className="button-is-small"
+										>
+											Remove
+										</Button>
+									</>
+								) : (
+									<Button onClick={open} className="open-btn">
+										Upload image
+									</Button>
+								)
+							}
+						/>
+					</MediaUploadCheck>
 				</div>
 				<div className="year-content-box">
 					<MediaUploadCheck>
