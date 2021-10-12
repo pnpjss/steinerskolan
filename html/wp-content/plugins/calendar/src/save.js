@@ -7,7 +7,7 @@ export default function Save({ attributes }) {
 	return (
 		<div {...useBlockProps.save()}>
 			<h3>{title}</h3>
-			<ul>{calendarItems}</ul>
+			<ul className="calendar-items">{calendarItems}</ul>
 		</div>
 	);
 }
