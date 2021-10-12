@@ -2,18 +2,18 @@
 <?php wp_footer(); ?>
 <footer>
    <div class="grid-item-1">
-       <a href="/home">
+       <a href="/">
        <img  class="logo-image" src="<?= get_theme_file_uri('./assets/steiner-logo.svg') ?>" alt="logo image footer">
     </a>
     <p>Att väcka nyfikenhet, förundran och lusten att lära sig</p>
     <div class="social-media-links">
-      <a href="/">
+      <a href="https://sv-se.facebook.com/rudolfsteinerskolanGBGsforaldraforening/">
       <img  class="fb-image" src="<?= get_theme_file_uri('./assets/fb-logo.svg') ?>" alt="link to facebook">
     </a>
-    <a href="/">
+    <a href="https://www.instagram.com/rudolfsteinerskolangoteborg/">
         <img  class="insta-image" src="<?= get_theme_file_uri('./assets/insta-logo.svg') ?>" alt="link to instagram">
     </a>
-    <a href="/">
+    <a href="mailto:rudolf@steinerskolan.se">
         <img  class="mail-image" src="<?= get_theme_file_uri('./assets/mail-logo.svg') ?>" alt="link to mail">
     </a>
 
