@@ -14,7 +14,9 @@
 
     <nav class="nav-container" id="nav-container">
         <div class="logo-container">
-            <img src="/wp-content/uploads/logo-2.svg" alt="Logo" class="logo">
+            <a href="/">
+            <img src="<?= get_theme_file_uri('./assets/steiner-logo.svg') ?>" alt="Logo" class="logo">
+        </a>
         </div>
         <div class="link-container">
             <?php $currentPageId = $wp_query->queried_object_id;
