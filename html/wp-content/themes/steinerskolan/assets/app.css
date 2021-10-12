@@ -17,7 +17,6 @@ footer {
 	background-color: #f6b787;
 	color: white;
 	justify-content: center;
-	font-family: arial;
 }
 .grid-item-1,
 .grid-item-2,
@@ -56,22 +55,23 @@ footer {
 	object-fit: contain;
 }
 
-ul,
-li {
+footer ul,
+footer li {
 	width: 80%;
 	padding-left: 0px;
 	list-style: none;
 	padding-top: 1rem;
 }
-a,
-p,
-li {
+
+footer a,
+footer p,
+footer li {
 	font-size: 18px;
 	text-decoration: none;
 	color: white;
 	font-weight: 400;
 }
-a {
+footer a {
 	font-weight: 600;
 }
 hr {
@@ -117,9 +117,9 @@ hr {
 	.hr-bottom {
 		visibility: hidden;
 	}
-	a,
-	p,
-	li {
+	footer a,
+	footer p,
+	footer li {
 		font-size: 18px;
 	}
 }
