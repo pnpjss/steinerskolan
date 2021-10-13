@@ -194,7 +194,7 @@ h3 {
 .link-container {
 	flex: 2;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .nav-link {
