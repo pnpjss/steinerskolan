@@ -1,1 +1,70 @@
-.wp-block-create-block-calendar{background-color:#fff;background-color:#3433bd;border-radius:18px 18px 0 0;bottom:0;box-shadow:0 0 5px 0 #2354c2;color:#fff;padding:20px;position:fixed;right:10px;transition:.2s ease;width:300px;z-index:2}.wp-block-create-block-calendar:hover{background-color:#fff;color:#3433bd}.wp-block-create-block-calendar h3{cursor:pointer}.wp-block-create-block-calendar ul{-webkit-padding-start:0;display:none;padding-inline-start:0}.wp-block-create-block-calendar ul li{list-style:none;margin:20px 0}@media screen and (min-width:1150px){.wp-block-create-block-calendar ul li{letter-spacing:.8px}}.calendar-open{-webkit-animation:slide-up .3s ease-in;animation:slide-up .3s ease-in}.calendar-open:hover{background-color:#3433bd;color:#fff}.calendar-open ul{display:block}@-webkit-keyframes slide-up{0%{transform:translateY(600px)}to{transform:translateY(300px)}}@keyframes slide-up{0%{transform:translateY(600px)}to{transform:translateY(300px)}}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-create-block-calendar {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 18px 18px 0 0;
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  transition: 0.2s ease;
+  background-color: #3433bd;
+  color: white;
+  box-shadow: 0px 0px 5px 0px #2354c2;
+  z-index: 2;
+}
+.wp-block-create-block-calendar:hover {
+  color: #3433bd;
+  background-color: white;
+}
+.wp-block-create-block-calendar h3 {
+  cursor: pointer;
+}
+.wp-block-create-block-calendar ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  display: none;
+}
+.wp-block-create-block-calendar ul li {
+  margin: 20px 0;
+  list-style: none;
+}
+@media screen and (min-width: 1150px) {
+  .wp-block-create-block-calendar ul li {
+    letter-spacing: 0.8px;
+  }
+}
+
+.calendar-open {
+  -webkit-animation: slide-up 0.3s ease-in;
+          animation: slide-up 0.3s ease-in;
+}
+.calendar-open:hover {
+  background-color: #3433bd;
+  color: white;
+}
+.calendar-open ul {
+  display: block;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
