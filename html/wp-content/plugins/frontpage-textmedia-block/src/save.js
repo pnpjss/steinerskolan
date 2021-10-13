@@ -10,7 +10,7 @@ export default function Save({ attributes }) {
 					<h3>{title}</h3>
 					<p>{content}</p>
 					<div className="textmedia-block-link">
-						<a href="/om-oss">Läs mer</a>
+						<a href="/om-oss">Läs mer om varför ni ska välja Waldorf</a>
 					</div>
 				</div>
 				<div className="block-img">
