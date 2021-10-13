@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/apply-info-text",
+	"version": "0.1.0",
+	"title": "Apply Info Text",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "apply-info-text",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

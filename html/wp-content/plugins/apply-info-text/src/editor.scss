@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-apply-info-text {
+	border: 1px dotted #f00;
+	background: lightgrey;
+}
+
+.info-container-editor {
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
