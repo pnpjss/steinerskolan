@@ -1,0 +1,89 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-create-block-apply-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #181818;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.wp-block-create-block-apply-top .apply-top-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .wp-block-create-block-apply-top .apply-top-content {
+    align-items: flex-start;
+  }
+  .wp-block-create-block-apply-top .apply-top-content .apply-text {
+    margin-left: 15%;
+    margin-bottom: 15%;
+  }
+}
+.wp-block-create-block-apply-top .apply-image {
+  height: 50vh;
+  width: 100%;
+}
+.wp-block-create-block-apply-top .apply-image img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+@media screen and (min-width: 700px) {
+  .wp-block-create-block-apply-top .apply-image img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+}
+.wp-block-create-block-apply-top .apply-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 80vw;
+  max-width: 35rem;
+  min-height: 15rem;
+  padding: 2rem;
+  border-radius: 15px;
+  z-index: 10;
+}
+.wp-block-create-block-apply-top .apply-text h1 {
+  font-size: 48px;
+}
+.wp-block-create-block-apply-top .apply-text p {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-style: italic;
+}
+.wp-block-create-block-apply-top .apply-text a {
+  background-color: #3433bd;
+  color: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 5px 0;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .wp-block-create-block-apply-top .apply-text {
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 553px;
+    min-height: 448px;
+  }
+  .wp-block-create-block-apply-top .apply-text p {
+    font-size: 24px;
+  }
+  .wp-block-create-block-apply-top .apply-text a {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
