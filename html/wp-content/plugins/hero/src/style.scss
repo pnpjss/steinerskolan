@@ -41,9 +41,14 @@
 				text-decoration: none;
 				text-align: center;
 				width: 200px;
+				box-shadow: 0px 1px 2px 1px #433c3c;
 
 				&:nth-child(2) {
 					width: 220px;
+				}
+
+				&:hover {
+					box-shadow: 0px 0px 0px 1px #433c3c6b;
 				}
 			}
 		}
