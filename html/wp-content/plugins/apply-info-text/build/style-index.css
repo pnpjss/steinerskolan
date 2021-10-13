@@ -8,14 +8,30 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-create-block-apply-info-text {
-  background-color: #21759b;
   color: #fff;
-  padding: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
-
-.info-container {
+.wp-block-create-block-apply-info-text .info-container {
   background: white;
   color: black;
+  padding: 2rem;
+  border-radius: 18px;
+  width: 100%;
+}
+.wp-block-create-block-apply-info-text .info-container h3 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.wp-block-create-block-apply-info-text .info-container p {
+  font-size: 18px;
+}
+@media screen and (min-width: 777px) {
+  .wp-block-create-block-apply-info-text {
+    margin: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/

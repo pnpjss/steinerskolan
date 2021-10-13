@@ -27,7 +27,7 @@ export default function save( { attributes }) {
 		<div {...useBlockProps.save()}>
 			<div className="info-container">
 				<h3>{attributes.title}</h3>
-				<p></p>
+				<p>{attributes.content}</p>
 			</div>
 		</div>
 	);
