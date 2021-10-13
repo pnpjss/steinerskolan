@@ -75,6 +75,9 @@ footer li {
 footer a {
 	font-weight: 600;
 }
+footer a:hover {
+	 color:#e56b6f;
+}
 footer p {
 	max-width: 80%;
 }
