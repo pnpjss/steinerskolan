@@ -17,7 +17,7 @@ footer {
 	background-color: #f6b787;
 	color: white;
 	justify-content: center;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.186);
+box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.186);
 }
 .grid-item-1,
 .grid-item-2,
