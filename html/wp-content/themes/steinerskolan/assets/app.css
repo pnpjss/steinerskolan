@@ -198,7 +198,7 @@ h3 {
 }
 
 .nav-link {
-	/* color: black; */
+	color: #252525;
 	margin: 0 1rem;
 	text-decoration: none;
 }
@@ -281,10 +281,6 @@ form button {
 	border-bottom: 2px solid var(--third-color);
 }
 
-.container {
-	margin-top: 0rem;
-}
-
 .content-link-container {
 	display: none;
 }
@@ -320,7 +316,7 @@ form button {
 	}
 
 	.logo {
-		max-width: 150px;
+		max-width: 200px;
 	}
 }
 
