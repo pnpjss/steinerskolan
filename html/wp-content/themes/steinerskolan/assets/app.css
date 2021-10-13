@@ -17,6 +17,7 @@ footer {
 	background-color: #f6b787;
 	color: white;
 	justify-content: center;
+box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.186);
 }
 .grid-item-1,
 .grid-item-2,
@@ -73,6 +74,12 @@ footer li {
 }
 footer a {
 	font-weight: 600;
+}
+footer a:hover {
+	 color:#e56b6f;
+}
+footer p {
+	max-width: 80%;
 }
 hr {
 	border: 1px solid white;
@@ -171,6 +178,9 @@ h3 {
 	background: var(--main-bg-color);
 	font-size: 24px;
 	font-weight: bold;
+	position: sticky;
+	z-index: 10;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.186);
 }
 
 .logo-container {
@@ -180,18 +190,18 @@ h3 {
 }
 
 .logo {
-	height: 88px;
+	height: 72px;
 	padding: 10px;
 }
 
 .link-container {
 	flex: 2;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .nav-link {
-	color: black;
+	color: #252525;
 	margin: 0 1rem;
 	text-decoration: none;
 }
@@ -274,10 +284,6 @@ form button {
 	border-bottom: 2px solid var(--third-color);
 }
 
-.container {
-	margin-top: 2rem;
-}
-
 .content-link-container {
 	display: none;
 }
@@ -313,7 +319,8 @@ form button {
 	}
 
 	.logo {
-		max-width: 150px;
+		max-width: 200px;
+		height: auto;
 	}
 }
 
